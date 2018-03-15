@@ -1,0 +1,71 @@
+{
+  "name": "react-native-router-flux",
+  "version": "3.41.0",
+  "description": "React Native Router using Flux architecture",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aksonov/react-native-router-flux"
+  },
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-router",
+    "react-components",
+    "react-component",
+    "ios",
+    "android",
+    "flux",
+    "router",
+    "navigation"
+  ],
+  "author": {
+    "name": "Pavlo Aksonov",
+    "email": "akso.nov@gmail.com",
+    "url": "http://aksonov.com"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "aksonov",
+      "email": "pavlo.aksonov@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "lodash.isequal": "^4.5.0",
+    "react-native-experimental-navigation": "^0.28.0",
+    "react-native-tabs": "^1.0.9",
+    "react-static-container": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.0.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "chai": "^3.5.0",
+    "eslint": "^4.0.0",
+    "jest": "20.0.4",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/Example/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-navigation)"
+    ],
+    "setupFiles": [
+      "./test/setup.js"
+    ]
+  }
+}
